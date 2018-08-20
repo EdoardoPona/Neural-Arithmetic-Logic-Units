@@ -1,4 +1,4 @@
-""" Basic implementatiojn of the NALU """
+""" Basic implementation of the NALU """
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -98,13 +98,3 @@ for i in range(int(iter_num)):
     if i % 2000 == 0:
         print('step', i, 'cost', cost.data[0])  # , a.data[0], '*', b.data[0], '=', out.data[0, 0])
 
-
-for i in range(50):
-    # x, y = random.randint(10, 50), random.randint(10, 50)
-    x = input('x ')
-    y = input('y ')
-    test(x, y)
-
-# TODO: check wether it is better to have a nac for addition and another one for multiplication, or using the same one for both.
-# TODO: experiment with lenth 100
-# TODO: experiment with more complex functions
